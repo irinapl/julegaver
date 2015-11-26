@@ -1,0 +1,7 @@
+.project
+.projectile
+.classpath
+.settings
+.checkstyle
+.idea
+node_modules
