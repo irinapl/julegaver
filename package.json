@@ -6,7 +6,7 @@
   "engines": {
     "node": "5.1.0",
     "npm": "3.3.12"
-  }
+  },
   "scripts": {
     "develop": "node_modules/.bin/webpack-dev-server --content-base public --port 3000 --hot",
     "start": "node start.js",
