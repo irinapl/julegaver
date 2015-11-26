@@ -6,12 +6,12 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'inline-source-map',
-
-  entry: [
+  isProd: prosess.ev.NODE_ENV = 'production';
+  entry: isProd ? [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
     './src/entry.js'
-  ],
+  ] : ['./src/entry.js'],
 
   output: {
     path: './public/',
@@ -22,7 +22,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loaders: ['babel'],
+      loaders: isProd = ['babel'] : ['react-hot', 'babel'],
       exclude: /node_modules/,
     }]
   }
